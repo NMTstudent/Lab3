@@ -39,13 +39,37 @@
 
 ## Задание 1
 ### 
-Реализовать систему машинного обучения в связке Python - Google-Sheets – Unity. При выполнении задания можно использовать видео-материалы и исходные данные, предоставленные преподавателями курса.
+Реализовать систему машинного обучения в связке Python - Google-Sheets – Unity. 
+При выполнении задания можно использовать видео-материалы и исходные данные, предоставленные преподавателями курса.
 
+В ходе работы:
 
+-был созданн новый прокт в Unity
 
+-был скачан и добавлен в проект ML агент
 
+-были последовательно добавлены .json – файлы: 
 
+      ml-agents-release_19 / com,unity.ml-agents / package.json 
+  
+      ml-agents-release_19 / com,unity.ml-agents.extensions / package.json
+  
+В вкладке Components внутри Unity появилась строка ML Agent.
 
+-через Anaconda Prompt был создан и активирован ML Agent
+```py
+(base) C:\Windows\system32>conda create -n MlAgent python=3.6.13
+```
+```py
+C:\Windows\system32>conda activate MLAgent
+```
+-скачаны необходимые библиотеки: mlagents 0.28.0 и torch 1.7.1
+```py
+(MLAgent) C:\Windows\system32>pip install mlagents==0.28.0
+```
+```py
+(MLAgent) C:\Windows\system32>pip install torch~=1.7.1 -f https://download.pytorch.org/whl/torch_stable.html
+```
 
 ## Задание 2
 ### Подробно опишите каждую строку файла конфигурации нейронной сети, доступного в папке с файлами проекта по ссылке. Самостоятельно найти информацию о компонентах Decision Requester, Behavior Parameters, добавленных на сфере.
